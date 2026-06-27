@@ -3,6 +3,7 @@ import pandas as pd
 df = pd.read_csv("hotel_bookings - Copy.csv")
 print("==First 5 Rows of dataset==")
 df.head(5)
+
 print(f"==Dataset Info==\n{df.info()}")
 print(f"==Statistics Summary==\n")
 print(df.describe(include='all'))
@@ -11,6 +12,7 @@ print(df.isnull().sum())
 print("==Duplicate Values==")
 print(df.duplicated())
 #Data Cleaning
+
 df.drop(columns=["company"])
 print("droping company column due to excessive missing values.")
 df['agent'].fillna(0)
