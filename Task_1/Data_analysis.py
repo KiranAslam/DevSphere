@@ -7,8 +7,10 @@ df.head(5)
 print(f"==Dataset Info==\n{df.info()}")
 print(f"==Statistics Summary==\n")
 print(df.describe(include='all'))
+
 print("==Missing Values==")
 print(df.isnull().sum())
+
 print("==Duplicate Values==")
 print(df.duplicated())
 #Data Cleaning
