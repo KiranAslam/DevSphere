@@ -1,3 +1,65 @@
+# Virtual environments
 myenv/
+.venv/
+venv/
+env/
+ENV/
 
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+ruff_cache/
+*.cython-*.pyc
+*.cython-*.pyx
+
+# Jupyter / notebook artifacts
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files and model artifacts
 *.csv
+*.xlsx
+*.parquet
+*.feather
+*.jsonl
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.bin
+*.onnx
+*.model
+# Generated JSON reports (optional - comment out if you want to track them)
+models/*.json
+
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Build and distribution
+build/
+dist/
+*.egg
+*.whl
+
+# Environment and local configs
+.env
+.env.*
+*.log
+
