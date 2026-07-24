@@ -1,13 +1,10 @@
 import time
-
-
 def linear_search(arr, target):
     
     for i in range(len(arr)):
         if arr[i] == target:
             return i  
     return -1  
-
 def binary_search(arr, target):
     low = 0
     high = len(arr) - 1
@@ -20,14 +17,12 @@ def binary_search(arr, target):
         elif arr[mid] < target:
             low = mid + 1
         else:
-            high = mid - 1
-            
+            high = mid - 1         
     return -1  
 if __name__ == "__main__":
 
     sample_list = [10, 23, 45, 70, 11, 15]
     sample_list.sort() 
-    
     target_value = 45
     print(f"Dataset (Sorted): {sample_list}")
     print(f"Target Element to find: {target_value}\n")
